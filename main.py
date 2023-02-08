@@ -3,5 +3,5 @@ import streamlit as st
 
 st.title("Tender History")
 st.write('Source: https://msmart.mcmc.gov.my/')
-df = get_df()
+df = get_df('tenderquoted')
 st.table(df)
