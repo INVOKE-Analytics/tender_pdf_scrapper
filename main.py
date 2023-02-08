@@ -1,3 +1,7 @@
 from scrapper import get_df
-if __name__ == '__main__':
-    get_df()
+import streamlit as st 
+
+st.title("Tender History")
+st.write('Source: https://msmart.mcmc.gov.my/')
+df = get_df()
+st.table(df)
